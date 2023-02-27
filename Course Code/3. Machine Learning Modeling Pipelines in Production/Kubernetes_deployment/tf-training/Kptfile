@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: tf-training
+upstream:
+  type: git
+  git:
+    repo: https://github.com/kubeflow/manifests
+    directory: /tf-training
+    ref: v1.1.0
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/kubeflow/manifests
+    directory: /tf-training
+    ref: v1.1.0
+    commit: d18fd96ab2c5441d6e7d2c85b016f083db77ab93
