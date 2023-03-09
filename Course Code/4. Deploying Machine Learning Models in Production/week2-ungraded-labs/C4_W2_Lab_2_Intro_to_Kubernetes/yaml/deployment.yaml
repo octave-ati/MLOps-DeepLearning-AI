@@ -25,10 +25,10 @@ spec:
             mountPath: /models/half_plus_two
         resources:
           requests:
-            memory: 32M
+            memory: 1G
             cpu: 5m
           limits:
-            memory: 64M
+            memory: 2G
             cpu: 10m
 
       volumes:
